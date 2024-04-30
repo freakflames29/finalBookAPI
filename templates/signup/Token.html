@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Token Page
+{% endblock %}
+
+{% block content %}
+    <h1>Your token :</h1> <p>{{ token }}</p>
+    <a href="{% url "logoutpath" %}">Logout</a>
+{% endblock %}
